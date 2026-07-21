@@ -51,7 +51,7 @@ Software **Architect** spending most of my time in the **AI agentic** world — 
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=jluqueba&theme=tokyonight&hide_border=true&card_width=495&v=2" alt="github streak" />
+  <img src="https://raw.githubusercontent.com/jluqueba/jluqueba/main/assets/streak-stats.svg" alt="github streak" />
 </p>
 
 ---

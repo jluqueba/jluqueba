@@ -1,0 +1,47 @@
+name: Generate Streak Card
+
+on:
+  # Refresh twice a day
+  schedule:
+    - cron: "30 */12 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+  # Regenerate on pushes to the default branch
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: streak-card
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch streak SVG
+        run: |
+          mkdir -p assets
+          curl -sSL --retry 3 --retry-delay 5 --fail \
+            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true" \
+            -o assets/streak-stats.svg
+          test -s assets/streak-stats.svg
+
+      - name: Commit updated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/streak-stats.svg
+          if git diff --staged --quiet; then
+            echo "No changes to the streak card."
+          else
+            git commit -m "chore: refresh streak card [skip ci]"
+            git push
+          fi
