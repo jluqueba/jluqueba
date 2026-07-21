@@ -1,0 +1,30 @@
+name: Generate Profile Summary Cards
+
+on:
+  # Refresh twice a day
+  schedule:
+    - cron: "0 */12 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+  # Regenerate on pushes to the default branch
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}

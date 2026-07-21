@@ -42,12 +42,16 @@ Software **Architect** spending most of my time in the **AI agentic** world — 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jluqueba&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="github stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jluqueba&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="top languages" />
+  <img src="https://raw.githubusercontent.com/jluqueba/jluqueba/main/profile-summary-card-output/tokyonight/3-stats.svg" alt="github stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jluqueba&theme=tokyonight&hide_border=true" alt="github streak" />
+  <img src="https://raw.githubusercontent.com/jluqueba/jluqueba/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="repos per language" />
+  <img src="https://raw.githubusercontent.com/jluqueba/jluqueba/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="most used languages" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=jluqueba&theme=tokyonight&hide_border=true" alt="github streak" />
 </p>
 
 ---
