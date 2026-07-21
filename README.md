@@ -1,12 +1,12 @@
 <!-- Profile README for @jluqueba -->
 
 <a href="https://github.com/jluqueba">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi%20there%20%F0%9F%91%8B%20I'm%20jluqueba&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" alt="header banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Hi%20there%20%F0%9F%91%8B%20I'm%20Jose%20Luque&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" alt="header banner" />
 </a>
 
 <p align="center">
   <a href="https://github.com/jluqueba">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2F81F7&center=true&vCenter=true&width=600&lines=Software+Developer;Cloud+%26+DevOps+enthusiast;Always+learning+something+new;Open+source+contributor" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2F81F7&center=true&vCenter=true&width=600&lines=Software+Architect;Building+AI+agentic+copilots;Cloud+%26+DevOps+enthusiast;Always+learning+something+new" alt="Typing SVG" />
   </a>
 </p>
 
@@ -20,21 +20,21 @@
 
 <img align="right" width="300" src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="contribution snake" />
 
-- 🔭 I'm currently working on **cloud & software engineering projects**
-- 🌱 I'm currently learning **new tools, frameworks and best practices**
-- 👯 I'm looking to collaborate on **open-source projects**
-- 💬 Ask me about **development, automation and cloud**
-- ⚡ Fun fact: **I love turning ideas into working software**
-- 📫 How to reach me: **open an issue or connect below**
+Software **Architect** spending most of my time in the **AI agentic** world — designing and building **AI agentic copilots**.
 
-> _Feel free to edit the bullets above to make this profile truly yours._
+- 🔭 I'm currently working on **AI projects & agentic copilots**
+- 🌱 I'm currently learning **prompting and orchestrating AI agents**
+- 👯 I'm looking to collaborate on **open-source AI & agentic projects**
+- 💬 Ask me about **AI agents, cats and CrossFit**
+- 🐱 I have **one cat** and I'm a proud **LEGO builder**
+- 🏋️ Big sports enthusiast: **CrossFit, scuba diving and climbing**
 
 ---
 
 ## 🛠️ Tech Stack & Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,python,java,cs,dotnet,nodejs,react,html,css,git,docker,kubernetes,azure,aws,linux,postgres,mongodb&perline=9" alt="skill icons" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,python,ts,nodejs,react,html,css,git,docker,kubernetes,azure,aws,linux,postgres,mongodb&perline=8" alt="skill icons" />
 </p>
 
 ---
@@ -77,7 +77,7 @@
   <a href="https://www.linkedin.com/in/jluqueba">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:jluqueba@example.com">
+  <a href="mailto:jluque.develope@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
