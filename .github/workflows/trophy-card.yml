@@ -1,0 +1,62 @@
+name: Generate Trophy Card
+
+on:
+  # Refresh twice a day
+  schedule:
+    - cron: "45 */12 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+  # Regenerate on pushes to the default branch
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trophy-card
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Checkout trophy generator
+        uses: actions/checkout@v4
+        with:
+          repository: ryo-ma/github-profile-trophy
+          ref: master
+          path: trophy-src
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Render trophy SVG
+        working-directory: trophy-src
+        env:
+          GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN2: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_API: https://api.github.com/graphql
+        run: |
+          deno run --allow-net --allow-env --allow-read --allow-write \
+            ./render_svg.ts "${{ github.repository_owner }}" "$GITHUB_WORKSPACE/assets/trophy.svg" tokyonight
+          test -s "$GITHUB_WORKSPACE/assets/trophy.svg"
+
+      - name: Commit updated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/trophy.svg
+          if git diff --staged --quiet; then
+            echo "No changes to the trophy card."
+          else
+            git commit -m "chore: refresh trophy card [skip ci]"
+            git push
+          fi

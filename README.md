@@ -59,7 +59,7 @@ Software **Architect** spending most of my time in the **AI agentic** world — 
 ## 🏆 Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jluqueba&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1" alt="github trophies" />
+  <img src="https://raw.githubusercontent.com/jluqueba/jluqueba/main/assets/trophy.svg" alt="github trophies" />
 </p>
 
 ---
